@@ -1,0 +1,12 @@
+<h1>Platform: Front End</h1>
+<h2 id="name"></h2>
+
+<script>
+    const URL = '';
+    fetch('http://localhost:3000/api')
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.querySelector('#name').innerHTML = data.name
+        })
+</script>
